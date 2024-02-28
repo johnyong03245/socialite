@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kaisei Decol", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #EEEDEB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: "Kaisei Decol", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    width: 80px;
+    height: 30px;
+    margin-left: 70px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 100px;
+    background-color: #E3E1D9;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 15px auto auto; /* Center the content */
+}
+
+.content h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+img {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.card {
+    display: flex; /* Use flexbox to make children inline */
+    position: relative;
+    max-width: 1200px;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    margin-left: 40px; /* Adjust the margin between image and title */
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.see-more {
+    align-self: flex-end; /* Align the "See More" link to the bottom of the card */
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.see-more::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.see-more:hover {
+    color: black;
+}
+
+.see-more:hover::before {
+    width: 100%; /* Expand the line to 100% on hover */
+}
+
+footer{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+   
+   }
